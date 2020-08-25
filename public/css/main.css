@@ -71,3 +71,37 @@ table{
 .noBorder{
 	border: none;
 }
+@media only screen and (max-device-width: 500px) {
+	h1{
+
+		font-size: 37px;
+
+
+	}
+	h2{ width: min-content;
+		padding: 2px 87px;
+		margin: auto;
+		border: 5px double white;
+		border-radius: 14px;
+	}
+	*{
+		font-size: 23px;
+	
+
+
+	}
+	body{
+		margin: 15px;
+
+
+
+	}
+
+	footer{
+		font-size: 25px;
+		border: dashed white;
+		margin: 0px -11px 13px;;
+
+
+	}
+}
