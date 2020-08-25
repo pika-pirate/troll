@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="public/img/imaghhes.jpg">
     <meta charset="utf-8">
     <script src='public/js/timer.js' async></script>
+    <script src='public/js/event.js' async></script>
 
 </head>
 
@@ -41,10 +42,9 @@
                     <td class="br">Bon pour: regarder le ciel (durée illimité)</td>
                 </tr>
                 <tr>
-                    <td class="noBorder"><img src=> </td>
-                    <td class="noBorder">
-                        <div>Respire, tu as <span id="time">20:00</span> minutes!</div><img src=></td>
-                    <td class="noBorder"><img src=></td>
+                    <td class="noBorder"><img id="water" class="hidden" src="public/img/water.png" height="300px" >  </td>
+                    <td class="noBorder"><div id="vm" class="hidden">Respire, tu as encore <span id="time">20:00</span> minutes!</div><img src=></td>
+                    <td class="noBorder"><img id="sky" class="hidden" src="public/img/sky.gif" height="150px"></td>
                 </tr>
             </tbody>
         </table>
