@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <title>Inscription</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="icon" type="image/x-icon" href="public/img/imaghhes.jpg">
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/d70a89f18c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <button>
+            <a href="fidel.html">
+                Retour
+            </a>
+        </button>
+        <button>
+            <a href="index.html">
+                Acceuil
+            </a>
+        </button>
+    </nav>
+    </nav>
+    <form id="form_msg" name="form_msg" method="POST" action="mail.php" target="_blank">
+        <!--PHP-->
+        <div style="width: max-content;">
+            <div>
+                <input id="Name" type="text" placeholder="Nom" name="Name" onblur="mev('',this.id)">
+                <input id="Email" type="text" placeholder="Email" name="Email" onblur="mev('',this.id)">
+            </div>
+            <div style="width: 100%;">
+                <textarea id="Message" type="text" placeholder="Ecrivez ici, pour être lu." name="Message"
+                    style="width: calc(100% - 12px); height: 123px; color: black; resize: none; border: 4px double black;"
+                    onblur="mev('',this.id)"></textarea>
+            </div>
+            <div>
+                <button id="envoi" type="button" style="border-radius: 19px; float: left; padding: 1px 22px;"
+                    onclick="envoyer()">
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i> Envoi du message
+                </button>
+                <input id="cEmail" type="text" placeholder="Confirmation de l'email" name="cEmail"
+                    onblur="mev('',this.id)" style="float: right">
+
+            </div>
+        </div>
+    </form>
+    <!--<form method="post" action="mail.php"><label> Ecrivez ici pour être lu</label>
+         
+        <textarea rows="3" cols="25" name="message"></textarea>
+        <input type="submit">
+    </form>-->
+
+</body>
+
+</html>
