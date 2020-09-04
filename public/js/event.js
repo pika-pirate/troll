@@ -19,11 +19,6 @@ heure.addEventListener (
     }
 )
 
-div.addEventListener(
-    "mouseover",function(){
-        div.classList.add("hidden")
-    }
-)
 
 var sky = document.querySelector(".br")
 var gif = document.querySelector("#sky")
